@@ -13,7 +13,7 @@ const ERROR_TEMPLATES = {
     },
 };
 
-module.exports = class HyperQueue {
+module.exports = class AXQueue {
     #id_counter = 0;
     #id_max = Number.MAX_SAFE_INTEGER;
     #queue = [];
@@ -40,7 +40,7 @@ module.exports = class HyperQueue {
         [max_concurrent_operations, max_queued_operations, max_queued_time_msecs].forEach((value) => {
             if (typeof value !== 'number')
                 throw new Error(
-                    'HyperQueue: One of the parameters you have entered was an invalid data type. All parameters must be numbers.'
+                    'AXQueue: One of the parameters you have entered was an invalid data type. All parameters must be numbers.'
                 );
         });
 
@@ -55,10 +55,10 @@ module.exports = class HyperQueue {
             let max_interval_msecs = max_rate_limit.interval_msecs;
 
             if (!this._valid_number_parameter(max_rate))
-                throw new Error('HyperQueue: max_rate_limit.rate parameter must be a finite number greater than 0');
+                throw new Error('AXQueue: max_rate_limit.rate parameter must be a finite number greater than 0');
 
             if (!this._valid_number_parameter(max_interval_msecs))
-                throw new Error('HyperQueue: max_rate_limit.interval_msecs parameter must be a finite number greater than 0');
+                throw new Error('AXQueue: max_rate_limit.interval_msecs parameter must be a finite number greater than 0');
 
             if (!isFinite(max_rate) || !isFinite(max_interval_msecs)) return this;
 
@@ -111,7 +111,7 @@ module.exports = class HyperQueue {
     }
 
     queue(operation) {
-        if (typeof operation !== 'function') throw new Error('HyperQueue: Instance.queue(operation) -> operation must be a function');
+        if (typeof operation !== 'function') throw new Error('AXQueue: Instance.queue(operation) -> operation must be a function');
         let reference = this;
         return new Promise((resolve, reject) => {
             // Ensure there is space remaining in queue
