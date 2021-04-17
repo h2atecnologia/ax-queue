@@ -8,7 +8,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+ssh://git@github.com/kartikk221/hyper-queue.git"
+    "url": "git+ssh://git@github.com/kartikk221/ax-queue.git"
   },
   "keywords": [
     "promise",
@@ -23,7 +23,7 @@
   "author": "kartikk221",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/kartikk221/hyper-queue/issues"
+    "url": "https://github.com/kartikk221/ax-queue/issues"
   },
-  "homepage": "https://github.com/kartikk221/hyper-queue#readme"
+  "homepage": "https://github.com/kartikk221/ax-queue#readme"
 }
