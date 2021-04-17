@@ -1,7 +1,7 @@
 {
   "name": "hyper-queue",
   "version": "1.0.0",
-  "description": "A simple to use promise based queue for rate & concurrency limiting.",
+  "description": "A simple-to-use promise based queue for rate & concurrency limiting.",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
@@ -16,7 +16,9 @@
     "node",
     "rate-limit",
     "concurrency-limit",
-    "speed"
+    "speed",
+    "simple",
+    "promise"
   ],
   "author": "kartikk221",
   "license": "MIT",
