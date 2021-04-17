@@ -1,0 +1,27 @@
+{
+  "name": "hyper-queue",
+  "version": "1.0.0",
+  "description": "A simple to use promise based queue for rate & concurrency limiting.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/kartikk221/hyper-queue.git"
+  },
+  "keywords": [
+    "promise",
+    "queue",
+    "node",
+    "rate-limit",
+    "concurrency-limit",
+    "speed"
+  ],
+  "author": "kartikk221",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/kartikk221/hyper-queue/issues"
+  },
+  "homepage": "https://github.com/kartikk221/hyper-queue#readme"
+}
