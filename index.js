@@ -169,7 +169,7 @@ module.exports = class AXQueue {
         let candidate = this.#queue_store[position];
 
         // Ensure candidate still exists
-        if (candidate == undefined) return setTimeout(() => this._perform_work(true), 100);
+        if (candidate == undefined) return setImmediate(() => this._perform_work(true));
 
         // adjust queue statistics
         this.#active_operations++;
