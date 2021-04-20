@@ -1,1 +1,1 @@
-# HyperQueue: A Simple Node.js Promise Based Queue
+# AXQueue: A Simple Node.js Promise Based Queue
