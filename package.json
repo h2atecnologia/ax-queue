@@ -1,6 +1,6 @@
 {
   "name": "ax-queue",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "A simple-to-use promise based queue for rate & concurrency limiting.",
   "main": "index.js",
   "scripts": {
